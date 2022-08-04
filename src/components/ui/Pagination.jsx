@@ -5,10 +5,10 @@ const Pagination = ({ previousPage, nextPage }) => {
 
     return (
         <div className="pagination">
-            <button onClick={previousPage}>
+            <button className="btn" onClick={previousPage}>
                 Previous
             </button>
-            <button onClick={nextPage}>
+            <button className="btn" onClick={nextPage}>
                 Next
             </button>
         </div>
