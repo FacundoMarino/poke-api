@@ -23,6 +23,15 @@ body{
     width: 200px;
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 
 .main{
 
@@ -53,4 +62,23 @@ body{
     width: auto;
     height: auto;
     border-radius: 50%;
+}
+
+.card{
+    width: auto;
+}
+
+.card-link{
+
+    width: auto;
+}
+.card-img{
+    width: 185px;
+    height: 185px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.card-title{
+    font-size: 1em;
 }

@@ -1,9 +1,11 @@
 import { BASE_URL } from "./base_url"
 import getMoreInfoAboutPokemon from "./getMoreInfoAboutPokemon"
 
-export const getPokemons = () => {
+export const getPokemons = ({limit, page}) => {
+    
+    const url = `${BASE_URL}?limit=${limit}&offset=${page * limit}`
+    return fetch(url)
 
-    return fetch(BASE_URL)
     .then(res => res.json())
     .then((res) => {
         return Promise.all(
