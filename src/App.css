@@ -82,3 +82,13 @@ body{
 .card-title{
     font-size: 1em;
 }
+
+.card-normal:hover{
+    height: 70%;
+    background-color: antiquewhite;
+}
+
+.card-grass:hover{
+    height: 300px;
+    background-color: greenyellow;
+}

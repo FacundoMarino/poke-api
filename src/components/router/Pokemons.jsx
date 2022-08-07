@@ -11,7 +11,7 @@ const Pokemons = () => {
     const [pokemons, setPokemons] = useState([])
 
     useEffect(() => {
-        getPokemons({page: 0, limit: 8}).then(res => setPokemons(res))
+        getPokemons({page: 1, limit: 8}).then(res => setPokemons(res))
     }, [])
 
     console.log(pokemons)
